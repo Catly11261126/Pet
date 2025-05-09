@@ -1,0 +1,71 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.TiledBg,
+		C3.Plugins.Sprite,
+		C3.Plugins.Text,
+		C3.Plugins.Button,
+		C3.Plugins.Mouse,
+		C3.Plugins.Touch,
+		C3.Plugins.shadowlight,
+		C3.Plugins.Mouse.Cnds.OnClick,
+		C3.Plugins.System.Acts.GoToLayoutByName,
+		C3.Plugins.Touch.Cnds.OnTapGesture,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked
+	];
+};
+self.C3_JsPropNameTable = [
+	{平鋪背景: 0},
+	{玩家: 0},
+	{Text: 0},
+	{Start: 0},
+	{平鋪背景2: 0},
+	{平鋪背景3: 0},
+	{Sprite: 0},
+	{平鋪背景4: 0},
+	{滑鼠: 0},
+	{Touch: 0},
+	{Text2: 0},
+	{Text3: 0},
+	{Sprite2: 0},
+	{Sprite3: 0},
+	{Sprite4: 0},
+	{Text4: 0},
+	{平鋪背景5: 0},
+	{平鋪背景6: 0},
+	{平鋪背景7: 0},
+	{平鋪背景8: 0},
+	{平鋪背景9: 0},
+	{平鋪背景10: 0},
+	{陰影光: 0},
+	{玩家2: 0},
+	{玩家3: 0}
+];
+
+self.InstanceType = {
+	平鋪背景: class extends self.ITiledBackgroundInstance {},
+	玩家: class extends self.ISpriteInstance {},
+	Text: class extends self.ITextInstance {},
+	Start: class extends self.IButtonInstance {},
+	平鋪背景2: class extends self.ITiledBackgroundInstance {},
+	平鋪背景3: class extends self.ITiledBackgroundInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	平鋪背景4: class extends self.ITiledBackgroundInstance {},
+	滑鼠: class extends self.IInstance {},
+	Touch: class extends self.IInstance {},
+	Text2: class extends self.ITextInstance {},
+	Text3: class extends self.ITextInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	Text4: class extends self.ITextInstance {},
+	平鋪背景5: class extends self.ITiledBackgroundInstance {},
+	平鋪背景6: class extends self.ITiledBackgroundInstance {},
+	平鋪背景7: class extends self.ITiledBackgroundInstance {},
+	平鋪背景8: class extends self.ITiledBackgroundInstance {},
+	平鋪背景9: class extends self.ITiledBackgroundInstance {},
+	平鋪背景10: class extends self.ITiledBackgroundInstance {},
+	陰影光: class extends self.IShadowLightInstance {},
+	玩家2: class extends self.ISpriteInstance {},
+	玩家3: class extends self.ISpriteInstance {}
+}
